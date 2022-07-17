@@ -1,0 +1,1 @@
+1) return; keyword -> this will return the value and stop/exist the code.

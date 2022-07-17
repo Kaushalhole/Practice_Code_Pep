@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header>h1{
+    font-weight: 100;
+    padding-left: 1.5rem;
+}
+
+header>nav{
+    margin-right: 80px;
+    width: 25rem;
+}
+
+nav>ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul>li{
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+nav ul li>a{
+    text-decoration: none;
+}
+
+nav ul li>a:hover{
+    color: orangered;
+}
+
+.Showcase_image{
+    width: 94%;
+    margin: 0 3%;
+   
+}
+article{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   
+}
+.container{
+    width: 30%;
+    padding: 3%;
+    text-align: center;
+    margin: 3%;
+    background-color: blueviolet;
+}
+.container img{
+    padding-bottom: 25px;
+}
+.container h1{
+    font-weight: 100;
+    padding-bottom: 25px;
+}
+.container p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+    font-size: 1.1rem;
+    align-items: center;  
+}
+
+
+
+
+

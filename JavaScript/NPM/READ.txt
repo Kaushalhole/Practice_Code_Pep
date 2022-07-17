@@ -1,0 +1,5 @@
+1. create folder NPM
+2. Open folder in intigrated terminal
+3. run command (npm init) --> (Press enter till it finish)
+4. run commad npm install figlet (whichever module you want to install)
+5. create a new file in folder (example fig.js) and use the module

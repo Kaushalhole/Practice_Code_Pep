@@ -1,0 +1,1 @@
+.gitignore fill so created so that it will ignore figlet module files when i push code on github
