@@ -1,0 +1,38 @@
+Organize function -->
+
+1) Organize function will take directory path as arguments
+2) If directory path is undefined return (please enter valid path)
+3) Check path is valid or not (exists or not)
+4) If path exist create folder their with name 'Organised_files' or else (please enter valid path)
+5) If 'Organised _files' folder does not exist then create it or if it exist print folder already exist
+6) Call OrganizeHelper function here
+
+OrganizeHelper function -->
+
+1) OrganizeHelper( directory path, destination path ) This function will take argument directory path and
+    destination path which we have got in organize function.   
+    OrganizeHelper(src, dest)  src -> directory path    dest -> destination path 
+2) Now we eill read src (directory path) and get name's of files/folders present in it
+3) Print all file/folder names using for loop Inside for loop we will get file path by joining (src, childnames[i])
+    and then check if it is file or not
+4) If it is file now we will get file category using getCategory function 
+5) Call send file function here
+
+Get_Category function -->
+
+1) Get_Category function will take filename as argument (filename id childname[i])
+2) Now we will remove extension of the file
+3) Now in for in loop we will get all the category type array from types. let categoryArr = Type[key]
+    Types is object where all the extension are stored in specific key of their type
+4) We will now get key (file type) from the for loop. We will check if extension is equal to cartypeArray we 
+    will return key otherwise return otherwise
+
+Send_files function -->
+
+1) Send Files function will take input(sourcefile_path, destination, filecategory)
+2) Now we will get categoryPath by joining dest, filecategory (ex document, app, media)   dest -> dest is organize folder path
+3) Now we will check if category path that is document folder is not present in organize_folders then make folder
+4) Now we will get base_name of all the file
+5) Now we will make one destination file path which will by joining category path filename
+6) Copy file (Source file to destination file)
+7) Unlink.log ("File Organized")
