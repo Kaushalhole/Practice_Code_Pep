@@ -1,9 +1,9 @@
 const request = require('request')
 const cheerio = require('cheerio')
 
-// let url = 'https://www.espncricinfo.com/series/india-in-west-indies-2022-1317885/west-indies-vs-india-2nd-odi-1317901/full-scorecard'
+let url = 'https://www.espncricinfo.com/series/india-in-west-indies-2022-1317885/west-indies-vs-india-2nd-odi-1317901/full-scorecard'
 
-let url = 'https://www.espncricinfo.com/series/county-championship-division-one-2022-1297650/lancashire-vs-kent-49th-match-1297755/full-scorecard'
+// let url = 'https://www.espncricinfo.com/series/county-championship-division-one-2022-1297650/lancashire-vs-kent-49th-match-1297755/full-scorecard'
 
 request(url,reqFunction)
 
