@@ -1,30 +1,28 @@
-const url = 'https://www.espncricinfo.com/series/ipl-2020-21-1210595'
+const HomeUrl = 'https://www.bikewale.com/'
 const request = require('request')
 const cheerio = require('cheerio')
 
-request(url, reqFun)
+request(HomeUrl, reqFunction_1)
 
-function reqFun(error, response, html){
+function reqFunction_1(error,response,html){
     if(error){
         console.log(error)
     }
     else{
-        console.log(response && response.statusCode)
-        extractLink(html) 
+        let resp = response && response.statusCode
+        handleHomeHtml(html)
     }
 }
 
-function extractLink(html){
+function handleHomeHtml(html){
     let $ = cheerio.load(html)
 
-    let anchorElem = $('span a[href="/series/ipl-2020-21-1210595/match-results"]')
+    let anchorElement = $('.brand-type-container ul li>a')
 
-    let link = anchorElem.attr('href')
-
-    let fullLink = 'https://www.espncricinfo.com'+link
-
-    console.log(fullLink)
-
-
-    
+    for(let i=0 ; i<anchorElement.length ; i++){
+        let shortBrandLink = $(anchorElement[i]).attr('href')
+        let FullBrandLink = 'https://www.bikewale.com'+shortBrandLink
+        console.log(FullBrandLink)
+    }
+ 
 }
